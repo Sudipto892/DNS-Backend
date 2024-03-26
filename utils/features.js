@@ -15,7 +15,7 @@ export const sendCookie=(user,res,message,statuscode=200)=>{
 }
 
 export const GenerateAuthToken = (tenant, clientId, clientSecret, resource) => {
-    const tokenUrl = `https://login.microsoftonline.com/${tenant}/oauth2/v2.0/token`;
+    const tokenUrl = `https://login.microsoftonline.com/${tenant}/oauth2/token`;
 
     // Request body for token acquisition
     const requestBody = {
